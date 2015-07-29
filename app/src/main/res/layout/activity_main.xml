@@ -1,0 +1,43 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:custom="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context=".MainActivity">
+
+    <RadioGroup
+        android:id="@+id/rg_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true">
+
+        <RadioButton
+            android:id="@+id/rb_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="left"/>
+
+        <RadioButton
+            android:id="@+id/rb_middle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="middle"/>
+
+        <RadioButton
+            android:id="@+id/rb_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="right"/>
+    </RadioGroup>
+
+    <com.cmcc.arcmenubutton.ArcMenuButtons
+        android:id="@+id/anim_menu"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentBottom="true"
+        custom:itemCount="4"
+        custom:menuSrc="@drawable/habit">
+    </com.cmcc.arcmenubutton.ArcMenuButtons>
+
+</RelativeLayout>

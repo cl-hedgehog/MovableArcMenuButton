@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+
+    <attr name="itemSize" format="dimension|reference" />
+    <attr name="itemMargin" format="dimension|reference" />
+    <attr name="itemCount" format="integer|reference" />
+    <attr name="menuSrc" format="reference" />
+
+    <declare-styleable name="ArcMenu">
+        <attr name="itemSize" />
+        <attr name="itemMargin" />
+        <attr name="itemCount" />
+        <attr name="menuSrc" />
+    </declare-styleable>
+
+</resources>

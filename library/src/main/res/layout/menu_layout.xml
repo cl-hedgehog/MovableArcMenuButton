@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <View
+        android:id="@+id/shadow"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/trans_shadow"
+        android:clickable="true"
+        android:visibility="gone" />
+
+    <ImageButton
+        android:id="@+id/iv_left"
+        style="@style/MenuShadowStyle"
+        android:layout_alignParentLeft="true"
+        android:visibility="invisible" />
+
+    <ImageButton
+        android:id="@+id/iv_middle"
+        style="@style/MenuShadowStyle"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible" />
+
+    <ImageButton
+        android:id="@+id/iv_right"
+        style="@style/MenuShadowStyle"
+        android:layout_alignParentRight="true"
+        android:visibility="invisible" />
+
+    <RelativeLayout
+        android:id="@+id/rl_menu_group"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center|bottom" >
+
+        <ImageButton
+            android:id="@+id/menu"
+            style="@style/MenuStyle"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+</RelativeLayout>
